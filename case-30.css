@@ -1,0 +1,250 @@
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #075e8d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(120deg, #075e8d, #16a085);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Section titles */
+section {
+    padding: 35px 5%;
+}
+
+.section-title {
+    text-align: center;
+    color: #075e8d;
+    margin-bottom: 25px;
+}
+
+/* Booking form */
+.booking-form {
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.booking-form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button,
+.book-btn {
+    display: inline-block;
+    background: #075e8d;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.booking-form button {
+    width: 100%;
+}
+
+button:hover,
+.book-btn:hover {
+    background: #16a085;
+}
+
+/* Service cards */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #075e8d;
+}
+
+.service-card p {
+    margin-bottom: 12px;
+}
+
+.service-card .price {
+    color: #16a085;
+    margin-top: 15px;
+}
+
+/* Seat selection */
+.seat-box {
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+}
+
+.seat-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.seat-layout label {
+    background: #d9fbe5;
+    color: #167342;
+    padding: 15px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.seat-layout input {
+    accent-color: #16a085;
+}
+
+.seat-layout label:has(input:checked) {
+    background: #16a085;
+    color: white;
+}
+
+.seat-note {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Fare table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #075e8d;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover td {
+    background: #eaf5fa;
+}
+
+/* Footer */
+footer {
+    background: #075e8d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

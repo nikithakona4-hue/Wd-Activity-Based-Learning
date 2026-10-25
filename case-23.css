@@ -1,0 +1,238 @@
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b12;
+    color: white;
+}
+
+/* Header */
+header {
+    background: #15151f;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 2px solid #00ff99;
+}
+
+header h1 {
+    color: #00ff99;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #cccccc;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ff99;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #101020, #192e36);
+}
+
+.hero h2 {
+    color: #00ff99;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #dddddd;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00ff99;
+    color: #101010;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* Section titles */
+section {
+    padding: 35px 5%;
+}
+
+.section-title {
+    text-align: center;
+    color: #00ff99;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Game cards */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    background: #171722;
+    border: 1px solid #29293a;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #00ff99;
+    box-shadow: 0 0 15px #00ff9944;
+}
+
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.game-card h3 {
+    color: #00ff99;
+    margin: 15px;
+}
+
+.game-card p {
+    color: #cccccc;
+    margin: 10px 15px;
+    line-height: 1.5;
+}
+
+/* Tournament and leaderboard tables */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #171722;
+}
+
+th {
+    background: #00cc7a;
+    color: #080808;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #343444;
+}
+
+tr:hover td {
+    background: #252535;
+}
+
+/* Team cards */
+.team-container,
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.team-card,
+.news-card {
+    background: #171722;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 3px solid #00ff99;
+    transition: 0.3s;
+}
+
+.team-card:hover,
+.news-card:hover {
+    transform: translateY(-5px);
+    background: #222232;
+}
+
+.team-card h3,
+.news-card h3 {
+    color: #00ff99;
+    margin-bottom: 15px;
+}
+
+.team-card p,
+.news-card p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #15151f;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 2px solid #00ff99;
+    line-height: 2;
+}
+
+footer h3 {
+    color: #00ff99;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

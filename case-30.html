@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBook - Bus & Train Booking</title>
+    <link rel="stylesheet" href="case-30.css">
+</head>
+<body>
+    <header>
+        <h1> TravelBook</h1>
+        <p>Your Journey, Our Priority</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#booking">Book Tickets</a>
+            <a href="#services">Services</a>
+            <a href="#seats">Select Seats</a>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h2>Travel Anywhere, Anytime</h2>
+        <p>Book bus and train tickets easily.</p>
+    </section>
+    <section id="booking">
+        <h2 class="section-title">Book Your Ticket</h2>
+        <form class="booking-form">
+            <label for="type">Travel Type</label>
+            <select id="type" name="type">
+                <option>Bus</option>
+                <option>Train</option>
+            </select>
+            <label for="source">From</label>
+            <input type="text" id="source" name="source"
+                   placeholder="Enter source city" required>
+            <label for="destination">To</label>
+            <input type="text" id="destination" name="destination"
+                   placeholder="Enter destination city" required>
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" name="date" required>
+            <label for="passengers">Passengers</label>
+            <select id="passengers" name="passengers">
+                <option>1 Passenger</option>
+                <option>2 Passengers</option>
+                <option>3 Passengers</option>
+                <option>4 Passengers</option>
+                <option>5 Passengers</option>
+            </select>
+            <button type="submit">Search Tickets</button>
+        </form>
+    </section>
+    <section id="services">
+        <h2 class="section-title">Available Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3> Express Bus</h3>
+                <p>Hyderabad → Bengaluru</p>
+                <p>Departure: 9:00 PM</p>
+                <p>Arrival: 7:00 AM</p>
+                <p>Type: AC Sleeper</p>
+                <h3 class="price">₹1,200</h3>
+                <a href="#seats" class="book-btn">Select Seat</a>
+            </div>
+            <div class="service-card">
+                <h3> Superfast Train</h3>
+                <p>Hyderabad → Chennai</p>
+                <p>Departure: 6:00 PM</p>
+                <p>Arrival: 6:00 AM</p>
+                <p>Class: Sleeper</p>
+                <h3 class="price">₹650</h3>
+                <a href="#seats" class="book-btn">Select Seat</a>
+            </div>
+            <div class="service-card">
+                <h3>Volvo Bus</h3>
+                <p>Hyderabad → Vijayawada</p>
+                <p>Departure: 10:00 PM</p>
+                <p>Arrival: 4:00 AM</p>
+                <p>Type: AC Seater</p>
+                <h3 class="price">₹800</h3>
+                <a href="#seats" class="book-btn">Select Seat</a>
+            </div>
+        </div>
+    </section>
+    <section id="passenger">
+        <h2 class="section-title">Passenger Details</h2>
+        <form class="booking-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name" required>
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter age" min="1" required>
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+            <button type="submit">Continue</button>
+        </form>
+    </section>
+    <section id="seats">
+        <h2 class="section-title">Choose Your Seat</h2>
+        <div class="seat-box">
+            <p>Driver / Front</p>
+            <div class="seat-layout">
+                <label><input type="checkbox"> 1A</label>
+                <label><input type="checkbox"> 1B</label>
+                <label><input type="checkbox"> 1C</label>
+                <label><input type="checkbox"> 2A</label>
+                <label><input type="checkbox"> 2B</label>
+                <label><input type="checkbox"> 2C</label>
+                <label><input type="checkbox"> 3A</label>
+                <label><input type="checkbox"> 3B</label>
+                <label><input type="checkbox"> 3C</label>
+                <label><input type="checkbox"> 4A</label>
+                <label><input type="checkbox"> 4B</label>
+                <label><input type="checkbox"> 4C</label>
+            </div>
+            <p class="seat-note">Green seats are available in this demo.</p>
+            <button type="button" class="confirm-btn">Confirm Seat</button>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">Fare Information</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Travel Class</th>
+                    <th>Fare</th>
+                </tr>
+                <tr>
+                    <td>Express Bus</td>
+                    <td>AC Sleeper</td>
+                    <td>₹1,200</td>
+                </tr>
+                <tr>
+                    <td>Superfast Train</td>
+                    <td>Sleeper</td>
+                    <td>₹650</td>
+                </tr>
+                <tr>
+                    <td>Volvo Bus</td>
+                    <td>AC Seater</td>
+                    <td>₹800</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <h3>TravelBook</h3>
+        <p>Travel safely and comfortably.</p>
+        <p>&copy; 2026 TravelBook. All rights reserved.</p>
+    </footer>
+</body>
+</html>
